@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: regression-model
+Version: 0.0.1
+Summary: Regression model for using in the Train In Data online course "Deployment of Machine Learning Models".
+Home-page: UNKNOWN
+Author: 
+Author-email: 
+License: BSD 3
+Description: Regression model for using in the Train In Data online course "Deployment of Machine Learning Models".
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown

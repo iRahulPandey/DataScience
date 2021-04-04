@@ -19,27 +19,22 @@ _price_pipe = load_pipeline(file_name=pipeline_file_name)
 def make_prediction(input_data):
     """Make a prediction using the saved model pipeline."""
 
-    # data = pd.read_csv(input_data)
-    data = pd.DataFrame(input_data)
-    # validated_data = validate_inputs(input_data=data)
+    data = pd.read_csv(input_data)
+    print(data)
     prediction = _price_pipe.predict(data[config.FEATURES])
-    # output = np.exp(prediction)
-    # print(data)
-    # prediction = _price_pipe.predict(data[config.FEATURES])
     output = prediction
-    # print(output)
+    print(output)
 
     results = {"predictions": output, "version": _version}
     # determine mse and rmse
-    # print("test mse: {}".format(int(mean_squared_error(data[config.TARGET], (results['predictions'])))))
-    # print("test rmse: {}".format(int(np.sqrt(mean_squared_error(data[config.TARGET], (results['predictions']))))))
-    # print("test r2: {}".format(r2_score(data[config.TARGET], (results['predictions']))))
+    print("test mse: {}".format(int(mean_squared_error(data[config.TARGET], (results['predictions'])))))
+    print("test rmse: {}".format(int(np.sqrt(mean_squared_error(data[config.TARGET], (results['predictions']))))))
+    print("test r2: {}".format(r2_score(data[config.TARGET], (results['predictions']))))
 
     return results
 
-
 if __name__ == "__main__":
     file_path = f"{config.DATASET_PATH}\{config.TRAINING_DATA_FILE}"
-    # print(file_path)
-    # result = make_prediction(file_path)
-    # print(result['predictions'])
+    #print(file_path)
+    result = make_prediction(file_path)
+    print(result['predictions'])

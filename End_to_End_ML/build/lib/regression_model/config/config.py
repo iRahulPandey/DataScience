@@ -21,7 +21,6 @@ PIPELINE_SAVE_FILE = f"{PIPELINE_NAME}_output_v_"
 
 # file name
 TRAINING_DATA_FILE = "train.csv"
-TESTING_DATA_FILE = "test.csv"
 
 # feature name
 FEATURES = ["X1", "X2", "X3"]
