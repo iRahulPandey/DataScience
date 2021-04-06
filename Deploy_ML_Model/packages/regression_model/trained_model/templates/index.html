@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <!--From https://codepen.io/frytyler/pen/EGdtg-->
+  <head>
+    <title>ML Model | Linear Regression</title>
+    <meta
+      name="description"
+      content="This is a simple demonstration of ML deployment"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+
+    <title>Predict Linear Regression Output</title>
+  </head>
+  <body>
+    <section class="hero" align="center">
+      <h2
+        style="
+          background-color: rgb(0, 24, 27);
+          color: white;
+          padding: 0;
+          margin: 0;
+        "
+      >
+        ML model prediction
+      </h2>
+      <h3 style="background-color: powderblue; padding: 0; margin: 0">
+        Input 3 numeric values <br />
+        Output ~ 10*X1+0.2*X2+900*X3
+      </h3>
+      <form
+        action="{{ url_for('predict')}}"
+        method="post"
+        class="form"
+        style="
+          background-color: rgb(228, 228, 228);
+          color: white;
+          padding: 10;
+          margin: 10;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <input type="text" name="X1" placeholder="X1" required="required" />
+        <input type="text" name="X2" placeholder="X2" required="required" />
+        <input type="text" name="X3" placeholder="X3" required="required" />
+
+        <button type="submit" class="button_predict">Predict</button>
+      </form>
+      <h3 style="background-color: powderblue; padding: 0; margin: 0">
+        {{ prediction_text }}
+      </h3>
+    </section>
+  </body>
+</html>

@@ -30,9 +30,10 @@ def make_prediction(input_data, data_type = ""):
 
 
 if __name__ == "__main__":
-    test_data = load_dataset(file_name='train.csv')
+    test_data = load_dataset(file_name='test.csv')
     single_test_json = test_data[0:1].to_json(orient='records')
     single_test = test_data[0:1]
+    print(single_test)
     #print(pd.DataFrame(single_test_json))
     prediction_json = make_prediction(single_test_json, "json")
     print(prediction_json)
