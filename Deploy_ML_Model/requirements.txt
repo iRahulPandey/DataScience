@@ -3,6 +3,12 @@ numpy>=1.18.1,<1.19.0
 pandas>=0.25.3,<0.26.0
 scikit-learn>=0.22.1,<0.23.0
 joblib>=0.14.1,<0.15.0
+Flask==1.1.1
+gunicorn==19.9.0
+itsdangerous==1.1.0
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+Werkzeug==0.15.5
 
 # testing requirements
 pytest>=5.3.2,<6.0.0
