@@ -1,0 +1,10 @@
+This is fake data
+Please don't believe it
+My name is Rahul and I am not a side kick and I do not pay money to be in the list
+name    title       salary
+Rahul   Side kick   -100 
+Ironman Rich Guy    1000000000000000000  
+Captain Respect Guy 100000000000000  
+Hulk    Smash bro   1000000000000000 
+This file is just an example
+This is all fake
